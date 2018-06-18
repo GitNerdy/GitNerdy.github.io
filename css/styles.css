@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+.left {
+	padding:12px 0px 0px 12px;
+}
+
+.right {
+	padding:12px 12px 0px 0px;
+}
+
+.col-12.left {
+	padding:12px 0px 0px 0px;
+}
+
+.col-12.right {
+	padding:12px 0px 0px 0px;
+}
+
+.title {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 30px;
+}
+
+.content {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	/*font-size: 16px;*/
+}
+
+.col-md-6 .title {
+	font-size: 50px;
+}
+
+.col-12 .title {
+	font-size: 40px;
+}
