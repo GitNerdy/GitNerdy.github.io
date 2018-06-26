@@ -1,6 +1,4 @@
-// JavaScript Document
-
-function myFunction(imgs) {
+function openImg(imgs) {
   // Get the expanded image
   var expandImg = document.getElementById("expandedImg");
   // Get the image text
