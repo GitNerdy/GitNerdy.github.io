@@ -1917,6 +1917,8 @@ pre code {
 }
 
 @media (max-width: 767.98px) {
+	
+	
   .table-responsive-md {
     display: block;
     width: 100%;
@@ -1930,6 +1932,9 @@ pre code {
 }
 
 @media (max-width: 991.98px) {
+	.content {
+		font-size:3vw;	
+	}
   .table-responsive-lg {
     display: block;
     width: 100%;
@@ -4123,6 +4128,9 @@ tbody.collapse.show {
 }
 
 @media (min-width: 768px) {
+	.content, .title {
+		padding-left: 1vw;
+	}
   .navbar-expand-md {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
