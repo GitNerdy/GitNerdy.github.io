@@ -3,28 +3,53 @@
 <head>
 <meta charset="utf-8">
 <title>Untitled Document</title>
-	
+	<script src="js/gallery.js"></script>
 	<link rel="stylesheet" href="css/bootstrap-4.0.0.css">
 	<link rel="stylesheet" href="css/gallery.css">
 </head>
 
 <body>
+	<!-- Header Content -->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="test.html">Happy House</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="history.html">History</a>
+          </li>
+			<li class="nav-item active">
+            <a class="nav-link" href="gallery.html">Gallery<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+	</header>
 	
-	<!-- The grid: four columns -->
+<!-- The grid: four columns -->
+	<div class="container-fluid">
 <div class="row">
-  <div class="column">
-    <img class="img-fluid" src="images/hh_den2.jpg" alt="Nature" onclick="openImg(this);">
+  <div class="column col-3">
+    <img class="img-fluid" src="images/hh_den2.jpg" alt="Den" onclick="openImg(this);">
   </div>
-  <div class="column">
-    <img class="img-fluid" src="images/hh_entrance.jpg" alt="Snow" onclick="openImg(this);">
-  </div>
-  <div class="column">
+  <div class="column col-3">
     <img class="img-fluid" src="images/hh_kitchen.jpg" alt="Kitchen" onclick="openImg(this);">
   </div>
-  <div class="column">
-    <img class="img-fluid" src="images/hh_living_room.jpg" alt="Lights" onclick="openImg(this);">
+  <div class="column col-3">
+    <img class="img-fluid" src="images/hh_entrance.jpg" alt="Entrance" onclick="openImg(this);">
+  </div>
+  <div class="column col-3">
+    <img class="img-fluid" src="images/hh_living_room.jpg"
+		 alt="Living Room" onclick="openImg(this);">
   </div>
 </div>
+	</div>
 
 <!-- The expanding image container -->
 <div class="container">
@@ -32,13 +57,25 @@
   <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
   <!-- Expanded image -->
-  <img id="expandedImg" style="width:100%">
+  <img id="expandedImg" alt="Expanded" style="width:100%">
 
   <!-- Image text -->
   <div id="imgtext"></div>
+	
 </div>
 	<footer>
-		<script src="js/gallery.js"></script>
-	</footer>
+		<div class="container-fluid" style="background: url(images/bottom.jpg)">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-12 offset-lg-1 order-0"><div class="title" style="color: white; text-align: center;">Email</div></div>
+				<div class="col-lg-3 col-12 offset-lg-1 order-lg-1 order-2"><div class="title" style="color: white; text-align: center;">Phone</div></div>
+				<div class="col-lg-3 col-12 offset-lg-1 order-lg-2 order-4"><div class="title" style="color: white; text-align: center;">Address</div></div>
+				<div class="col-lg-3 col-12 offset-lg-1 order-lg-3 order-1"><div class="content" style="color: white; text-align: center; padding-bottom: 3vh;">bemckin@aol.com</div></div>
+				<div class="col-lg-3 col-12 offset-lg-1 order-lg-4 order-3"><div class="content" style="color: white; text-align: center; padding-bottom: 3vh;">(843)298-7228</div></div>
+				<div class="col-lg-3 col-12 offset-lg-1 order-5"><div class="content"  style="color: white; text-align: center; padding-bottom: 3vh;">123 456 Lane</div></div>
+			</div>
+		</div>
+		</div>
+		</footer>
 </body>
 </html>
